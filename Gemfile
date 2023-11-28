@@ -21,7 +21,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -61,3 +61,5 @@ gem 'omniauth-rails_csrf_protection', '~>0.1.2'
 gem 'rails-i18n', '~> 6.0.0'
 gem 'pry-rails'
 gem 'factory_bot_rails'
+gem 'active_storage_validations', '~> 0.8.8'
+gem 'kaminari', '~> 1.2.0'
