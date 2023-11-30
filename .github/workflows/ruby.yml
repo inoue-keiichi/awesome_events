@@ -3,7 +3,7 @@ name: Rails Tests
 on: [push, pull_request]
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby 2.7.6
