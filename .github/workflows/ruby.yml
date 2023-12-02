@@ -6,10 +6,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14.x
+      
     - name: Set up Ruby 2.7.6
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.7.6
+        
     - name: Build and test
       env: 
         RAILS_ENV: test
